@@ -54,7 +54,7 @@ from projectairsim.utils import projectairsim_log
 from coordinator import TaskCoordinator
 
 
-AGENT_NAMES = ["Drone1", "Drone2", "Drone3"]
+AGENT_NAMES = ["Drone1", "Drone2", "Drone3", "Drone4", "Drone5"]
 
 # Candidate goal points -- must be >= len(AGENT_NAMES). The coordinator
 # assigns each agent one of these (nearest-cost matching) at every reset.
@@ -62,6 +62,8 @@ GOAL_POOL = [
     (-34.6, -6.24, -1.0),
     (48.0, 5.0, -3.0),
     (2.0, 47.0, -2.0),
+  (60.0, -20.0, -3.0),
+    (-60.0, -60.0, -3.0),
 ]
 
 
