@@ -37,7 +37,8 @@ from example_interfaces.srv import Trigger  # placeholder request/response type
 from projectairsim import ProjectAirSimClient, Drone, World
 
 
-AGENT_NAMES = ["Drone1", "Drone2", "Drone3"]
+AGENT_NAMES = ["Drone1", "Drone2", "Drone3","Drone4",
+    "Drone5"]
 PUBLISH_RATE_HZ = 10.0
 
 
