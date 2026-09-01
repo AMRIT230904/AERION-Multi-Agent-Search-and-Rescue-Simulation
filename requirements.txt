@@ -1,0 +1,19 @@
+# Core RL / numerics
+numpy>=1.24
+torch>=2.0
+gymnasium>=0.29
+stable-baselines3>=2.0
+scipy>=1.10          # optional: enables optimal (Hungarian) task assignment
+                      # in coordinator.py; falls back to a greedy matcher
+                      # automatically if not installed.
+
+# Multi-drone messaging (multi_drone_hover.py)
+pynng>=0.7
+
+# NOTE: two dependencies are intentionally NOT in this file because they
+# aren't installable from PyPI:
+#   - rclpy / ROS2 message packages (aerion_ros2_node.py, ros2_goal_listener.py)
+#     -> install via a ROS2 distro (e.g. `sudo apt install ros-humble-desktop`)
+#   - projectairsim
+#     -> install per Microsoft Project AirSim's own setup instructions
+# See README.md > Installation for details.
