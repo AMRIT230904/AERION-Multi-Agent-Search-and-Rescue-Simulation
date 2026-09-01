@@ -1,0 +1,67 @@
+{
+  "id": "SceneBasicDrone",
+  "actors": [
+    {
+      "type": "robot",
+      "name": "Drone1",
+      "origin": {
+        "xyz": "37.6 39.5 -5",
+        "rpy-deg": "0 0 -45"
+      },
+      "robot-config": "robot_quadrotor_lidar.jsonc"
+    },
+    {
+      "type": "robot",
+      "name": "Drone2",
+      "origin": {
+        "xyz": "-30.0 20.0 -8",
+        "rpy-deg": "0 0 0"
+      },
+      "robot-config": "robot_quadrotor_lidar.jsonc"
+    },
+    {
+      "type": "robot",
+      "name": "Drone3",
+      "origin": {
+        "xyz": "0.0 -40.0 -10",
+        "rpy-deg": "0 0 90"
+      },
+      "robot-config": "robot_quadrotor_lidar.jsonc"
+    },
+    {
+      "type": "robot",
+      "name": "Drone4",
+      "origin": {
+        "xyz": "60.0 -20.0 -6",
+        "rpy-deg": "0 0 180"
+      },
+      "robot-config": "robot_quadrotor_lidar.jsonc"
+    },
+    {
+      "type": "robot",
+      "name": "Drone5",
+      "origin": {
+        "xyz": "-60.0 -60.0 -7",
+        "rpy-deg": "0 0 -90"
+      },
+      "robot-config": "robot_quadrotor_lidar.jsonc"
+    }
+  ],
+  "clock": {
+    "type": "steppable",
+    "step-ns": 3000000,
+    "real-time-update-rate": 3000000,
+    "pause-on-start": false
+  },
+  "home-geo-point": {
+    "latitude": 47.641468,
+    "longitude": -122.140165,
+    "altitude": 122.0
+  },
+  "segmentation": {
+    "initialize-ids": true,
+    "ignore-existing": false,
+    "use-owner-name": true
+  },
+  "scene-type": "UnrealNative"
+}
